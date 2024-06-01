@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Webpage of Jason Jiang</title>
-    <link rel="stylesheet" href="view/index.css">
     <link rel="stylesheet" href="view/nav.css">
+    <link rel="stylesheet" href="view/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
+    <script src="controller/animations/index.js" defer></script>
+    <script src="controller/animations/scroll_capture.js" defer></script>
+    
     <nav>
         <button type="button" id="home_logo">
             <span>Welcome To </span><br> <span>Jason Jiang's</span><br> <span>Webpage</span>
@@ -48,13 +52,22 @@
         <div id="links">
             <span id="linkHolders">
                 <a href="#HowTo">
-                    <button type="button">
+                    <button id="How_To_Button" class="active" type="button">
                         How To
                     </button>
                 </a>
                 
-                <a href="#Mission">Mission</a>
-                <a href="#Sections">Sections</a>
+                <a href="#Mission">
+                    <button id="Mission_Button" type="button">
+                        Mission
+                    </button>
+                    
+                </a>
+                <a href="#Sections">
+                    <button id="Sections_Button" type="button">
+                        Sections
+                    </button>               
+                </a>
                 <img id="laural_wreath" src="static/images/laural_wreath.png"
                 alt="Image to Represent you have completed all sections of this page" title="Reach here to recieve the badge for this page" data-toggle="tooltip
                 >
@@ -65,9 +78,46 @@
         </div>
     </nav>
 
-    <section id="#HowTo">
-        <h1>How To</h1>
-        <p>Lost? Click on the badges above to navigate to different sections of the webpage.</p>
+    <section id="HowTo">
+        <div>
+            <h1 class="left_aligned">Collect all badges by visiting all pages
+            <br/>
+                (5 min for speed readers)<button type="button" id="hint_guide"
+            alt="Question Mark Button with tool tip" title="Lost? Click on the badges above to navigate to different sections of the webpage." data-toggle="tooltip"
+            >?</button>
+        </h1>
+        
+            
+        <h1 class="right_aligned">Scroll to learn about Jason Jiang</h1>
+        </div>
+
+        
     </section>
+
+    <div id="start_image_parent">
+        <div id="Mission">
+            <h1>
+                 "Our only hope today lies in our ability to recapture the revolutionary spirit and go out into a sometimes hostile world declaring eternal hostility to poverty, racism, and militarism."
+            </h1>
+            <h1>
+                Martin Luther King Jr
+            </h1>
+        </div>
+        <div id="DoSomething">
+            <h1>
+                 Living in a bubble is a privilege. Its trusting that the systems
+that have harmed others, will never be against you.
+<h1>-- Paraphrase from Keiah Shauku 5/30/24</h1>
+            </h1>
+        </div>
+        <div id="start_image">
+            <img 
+            title="Scroll to get started" alt="Image of a sprawling rural area"
+            src="static/images/start_grand_angle.png"/>
+            
+        </div>
+
+        
+     </div> 
 </body>
 </html>

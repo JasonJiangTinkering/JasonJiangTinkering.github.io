@@ -1,3 +1,128 @@
+html{
+    scrollbar-width: 0;
+    scrollbar-color: transparent transparent;
+    overflow: hidden;
+}
+
 #HowTo{
-    
+    position: fixed;
+    width: 1440px;
+    height: 641px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#HowTo>div{
+    width: 1269px;
+    height: 512px;
+    flex-shrink: 0;
+    border: 1px dashed #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#HowTo>div>h1{
+    color: #000;
+    font-family: Jost;
+    font-size: 46.776px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    position: relative;
+}
+.left_aligned{
+    left:33px;
+}
+.right_aligned{
+    right:33px;
+    text-align: right;
+
+}
+#start_image_parent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    top: 1em;
+
+}
+#start_image{
+    width: 235px;
+    height: 201px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 235px;
+    transition: min-height 0.5s, min-width 0.5s, border-radius 0.5s;
+}
+
+#start_image>img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    scale: 2;
+    border-radius: 235px;
+
+}
+#hint_guide{
+    display: inline-flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #34B0B8;
+    color: #000;
+    font-family: Jost;
+    font-size: 36.229px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 1em;
+    left: 14em;
+}
+
+#Mission{
+    opacity: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    /* top: 10px; */
+    background-color: rgba(0, 0, 0, .4);
+
+}
+
+#DoSomething{
+    position: absolute;
+    opacity: 0;
+    color: #FFF;
+    font-family: Jost;
+    font-size: 21.629px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 3;
 }
