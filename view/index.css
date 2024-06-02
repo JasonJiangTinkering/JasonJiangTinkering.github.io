@@ -71,7 +71,9 @@ html{
     flex-shrink: 0;
     position: relative;
     border-radius: 235px;
-    transition: min-height 0.5s, min-width 0.5s, border-radius 0.5s;
+    transition: min-height 0.5s, min-width 0.5s, border-radius 0.5s, brightness 2.5s;
+    overflow: hidden;
+
 }
 
 #start_image>img{
@@ -99,7 +101,6 @@ html{
     font-weight: 400;
     line-height: normal;
     position: absolute;
-    top: 1em;
     left: 14em;
 }
 

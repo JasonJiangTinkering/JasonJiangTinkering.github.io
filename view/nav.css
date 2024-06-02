@@ -148,3 +148,7 @@ nav>div>*>a, nav>div>a{
     width: 80px;
     height: 80px;
 }
+
+.badge_backing> img.active{
+    opacity: 1;
+}

@@ -76,13 +76,22 @@ function render_page(last_scroll_position, scroll_position){
             }
         )
     }
-    if (scroll_position > 250 && scroll_position < 400){
+    if (scroll_position > 250 && scroll_position < 325){
         HowToButton.attr("class", "")
         SectionsButtton.attr("class", "")
         MissionButton.attr("class", "active")
         mission.css(
             {
                 "opacity": (scroll_position-250)/25,
+            }
+        )
+    }else if (scroll_position > 325 && scroll_position < 400){
+        HowToButton.attr("class", "")
+        SectionsButtton.attr("class", "")
+        MissionButton.attr("class", "active")
+        mission.css(
+            {
+                "opacity": 1-((scroll_position-250)/25),
             }
         )
     }else{
@@ -92,14 +101,14 @@ function render_page(last_scroll_position, scroll_position){
             }
         )
     }
-    if (scroll_position > 400){
+    if (scroll_position > 375){
         start_image.css(
             {
                 "filter": "brightness(50%)",
             }
         )
         DoSomething.css(
-            "opacity", (scroll_position-400)/25
+            "opacity", (scroll_position-375)/75
         )
     }else{
         start_image.css(
