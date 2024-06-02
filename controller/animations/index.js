@@ -11,13 +11,16 @@ window.addEventListener("load", function() {
 function setScrollBasedOnHash(){
     var hash = location.hash.replace( /^#/, '' );
     if (hash == "HowTo"){
+        render_page(scrollPosition, 0);
         scrollPosition = 0;
     }
-    // if (hash == "Sections"){
-    //     scrollPosition = 250;
-    // }
     if (hash == "Mission"){
-        scrollPosition = 400;
+        render_page(scrollPosition, 270);
+        scrollPosition = 251;
+    }
+    if (hash == "Sections"){
+        render_page(scrollPosition, 601);
+        scrollPosition = 601;
     }
 
 }
@@ -137,6 +140,9 @@ function render_page(last_scroll_position, scroll_position){
         }) 
     }
     if (scroll_position > 600 && scroll_position < 1000){
+        HowToButton.attr("class", "")
+        SectionsButtton.attr("class", "active")
+        MissionButton.attr("class", "")
         getComputedStyle(sections.get()[0]).getPropertyValue("--hiddenPercent");
         sections.get()[0].style.setProperty("--hiddenPercent", 
         (1000-scroll_position)/1000);

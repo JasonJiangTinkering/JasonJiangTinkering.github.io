@@ -13,7 +13,7 @@
     <script src="controller/score_game/score_index.js" defer></script>
     <script src="controller/animations/index.js" defer></script>
     <script src="controller/animations/scroll_capture.js" defer></script>
-    
+    <script src="controller/score_game/reset_game.js" defer></script>
     <nav>
         <a href="/index.html" id="home_logo">
             <span>Welcome To </span><br> <span>Jason Jiang's</span><br> <span>Webpage</span>
@@ -47,7 +47,9 @@
                     </span>
                 </a>
             </span>
-            <img id="restart" src="static/images/restart.png" alt="Restart the game" title="Click here to reset the badges you got" data-toggle="tooltip">
+            <img onclick="reset_game()" id="restart" src="static/images/restart.png" alt="Restart the game" title="Click here to reset the badges you got" data-toggle="tooltip">
+
+            
 
         </div>
 
