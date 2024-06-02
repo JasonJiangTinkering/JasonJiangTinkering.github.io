@@ -62,7 +62,7 @@ function render_page(last_scroll_position, scroll_position){
         start_image.css(
             {
                 "minWidth": "100vw",
-                "minHeight": "100vh",
+                "minHeight": "calc(100vh - 131px)",
                 "borderRadius": (100*(220-scroll_position)/220) + "px",
             }
         )
@@ -71,7 +71,7 @@ function render_page(last_scroll_position, scroll_position){
         start_image.css(
             {
                 "minWidth": "100vw",
-                "minHeight": "100vh",
+                "minHeight": "calc(100vh - 131px)",
                 "borderRadius": "0px",
             }
         )
