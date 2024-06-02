@@ -1,4 +1,4 @@
-body > section {
+body>section {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -21,14 +21,16 @@ body > section {
     position: relative;
 }
 
-html{
+
+html {
     scrollbar-width: 0;
     scrollbar-color: transparent transparent;
     height: 100vh;
     overflow: hidden;
+    font-size: 1vw;
 }
 
-.Follow{
+.Follow {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -39,12 +41,12 @@ html{
     transition: left 0.5s;
 }
 
-.FlowText{
+.FlowText {
     padding: 1em;
-    width: calc(100vw - 2em);   
+    width: calc(100vw - 2em);
 }
 
-#animatedWave{
+#animatedWave {
     background-image: url("../static/images/AboutMe/wave.png");
     background-repeat: repeat-x;
     height: 257px;
@@ -55,7 +57,7 @@ html{
     transition: all 1s;
 }
 
-#animatedHearts{
+#animatedHearts {
     background-image: url("../static/images/AboutMe/heart.png");
     background-repeat: repeat-x;
     height: 257px;
@@ -65,7 +67,8 @@ html{
     bottom: 0;
     transition: all 1s;
 }
-#animatedHuman{
+
+#animatedHuman {
     background-image: url("../static/images/AboutMe/human.png");
     background-repeat: repeat-x;
     height: 257px;
@@ -76,18 +79,19 @@ html{
     transition: all 1s;
 }
 
-@keyframes fade_In_out{
-    0%{
+@keyframes fade_In_out {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         background-position-x: 0px;
         left: 0;
     }
 }
 
-section{
+section {
     animation-name: fade_In_out;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -95,7 +99,8 @@ section{
     transition: display 1s, visibility 1s;
     background-position-x: 0px;
 }
-section[active=true]{
+
+section[active=true] {
     background-position-x: 0px;
     position: absolute;
     display: flex;
@@ -103,7 +108,8 @@ section[active=true]{
     height: calc(100vh - 131px);
     opacity: 1;
 }
-section:not([active=true]){
+
+section:not([active=true]) {
     display: none;
     visibility: hidden;
     height: 0px;
