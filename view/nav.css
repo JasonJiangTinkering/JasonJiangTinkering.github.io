@@ -66,6 +66,16 @@ nav>div>span>a>button:not(.active){
     color: inherit;
 }
 
+.SectionsJumpers[active="true"]{
+    width: 140.421px;
+    height: 66.867px;
+    flex-shrink: 0;
+    background: #9F3D3D;
+    border-radius: 12.158px;
+    font: inherit;
+    color: inherit;
+}
+
 nav>div>span>a>button.active{
     width: 140.421px;
     height: 66.867px;

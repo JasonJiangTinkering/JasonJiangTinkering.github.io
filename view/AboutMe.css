@@ -1,0 +1,108 @@
+body > section {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 131px);
+    background: #0000;
+    left: 0;
+    z-index: 0;
+    transition: left 0.5s;
+
+    color: #000;
+    font-family: Jost;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    position: relative;
+}
+
+html{
+    scrollbar-width: 0;
+    scrollbar-color: transparent transparent;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Follow{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background: #0000;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: left 0.5s;
+}
+
+.FlowText{
+    padding: 1em;
+    width: calc(100vw - 2em);   
+}
+
+#animatedWave{
+    background-image: url("../static/images/AboutMe/wave.png");
+    background-repeat: repeat-x;
+    height: 257px;
+    width: 100%;
+    background-position-x: 0px;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+
+#animatedHearts{
+    background-image: url("../static/images/AboutMe/heart.png");
+    background-repeat: repeat-x;
+    height: 257px;
+    width: 100%;
+    background-position-x: 0px;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+#animatedHuman{
+    background-image: url("../static/images/AboutMe/human.png");
+    background-repeat: repeat-x;
+    height: 257px;
+    width: 100%;
+    background-position-x: 0px;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+
+@keyframes fade_In_out{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+section{
+    animation-name: fade_In_out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    transition: display 1s, visibility 1s;
+}
+section[active=true]{
+    position: absolute;
+    display: flex;
+    visibility: visible;
+    height: calc(100vh - 131px);
+    opacity: 1;
+}
+section:not([active=true]){
+    display: none;
+    visibility: hidden;
+    height: 0px;
+    opacity: 0;
+}

@@ -8,7 +8,8 @@ document
 
 var scrollPosition = 0;
 function onScroll(e){
-
+    e.preventDefault();
+    e.stopPropagation();
     if (e.deltaY > 0) {
         render_page (scrollPosition, scrollPosition + 20);
         scrollPosition += 20;
@@ -17,7 +18,7 @@ function onScroll(e){
         scrollPosition -= 20;
 
     }
-    document.body.scrollTop = 0;
+    document.body.scrollPosition = 0;
     
 }
 

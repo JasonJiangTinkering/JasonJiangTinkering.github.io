@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Webpage of Jason Jiang</title>
+    <link rel="stylesheet" href="view/nav.css">
+    <link rel="stylesheet" href="view/AboutMe.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <script src="controller/score_game/score_main.js" defer></script>
+    <script src="controller/cookie_manager.js" defer></script>
+    <script src="controller/score_game/score_AboutMe.js" defer></script>
+    <script src="controller/animations/AboutMe.js" defer></script>
+    <script src="controller/animations/scroll_capture.js" defer></script>
+    <script src="controller/score_game/reset_game.js" defer></script>
+    <nav>
+        <a href="/index.html" id="home_logo">
+            <span>Welcome To </span><br> <span>Jason Jiang's</span><br> <span>Webpage</span>
+        </a>
+
+        <div id="game">
+            <span id="badge_group">
+                <a href="/index.html">
+                    <span class="badge_backing">
+                        <img id="home_badge" src="static/images/home.png" alt="Home Badge, click to visit the page to earn the badge" title="Home Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/aboutme.html">
+                    <span class="badge_backing">
+                        <img id="about_me_badge" src="static/images/aboutme.png" alt="About Badge, click to visit the page to earn the badge" title="About Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/portfolio.html">
+                    <span class="badge_backing">
+                        <img id="portfolio_badge" src="static/images/information.png" alt="Portfolio Badge, click to visit the page to earn the badge" title="Portfolio Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/network.html">
+                    <span class="badge_backing">
+                        <img id="network_badge" src="static/images/network.png" alt="Network Badge, click to visit the page to earn the badge" title="Network Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/star.html">
+                    <span class="badge_backing">
+                        <img id="mystery_badge" src="static/images/question.png" alt="Hidden Badge, discover the other badges to start this badge" title="Hidden Badge, discover the other badges to start this badge" data-toggle="tooltip">
+                    </span>
+                </a>
+            </span>
+            <img onclick="reset_game()" id="restart" src="static/images/restart.png" alt="Restart the game" title="Click here to reset the badges you got" data-toggle="tooltip">
+
+            
+
+        </div>
+
+        <div id="links">
+            <span id="linkHolders">
+                <a href="#FollowFlow">
+                    <button id="FlowButton" class="SectionsJumpers" active="true" type="button">
+                        Flow
+                    </button>
+                </a>
+                
+                <a href="#WhatIWant">
+                    <button  id="WhatIWantButton" class="SectionsJumpers" type="button">
+                        Want, do
+                    </button>
+                    
+                </a>
+                <a href="#FindingHumanity">
+                    <button  id="FindingHumanityButton" class="SectionsJumpers" type="button">
+                        Humanity
+                    </button>               
+                </a>
+                <img id="laural_wreath" src="static/images/laural_wreath.png"
+                alt="Image to Represent you have completed all sections of this page" title="Reach here to recieve the badge for this page" data-toggle="tooltip
+                >
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="532" height="23" viewBox="0 0 532 23" fill="none">
+                <path d="M531.065 12.5607C531.651 11.9749 531.651 11.0251 531.065 10.4393L521.519 0.893398C520.934 0.307612 519.984 0.307612 519.398 0.893398C518.812 1.47918 518.812 2.42893 519.398 3.01472L527.883 11.5L519.398 19.9853C518.812 20.5711 518.812 21.5208 519.398 22.1066C519.984 22.6924 520.934 22.6924 521.519 22.1066L531.065 12.5607ZM-0.00390625 13H530.005V10H-0.00390625V13Z" fill="black"/>
+              </svg>
+        </div>
+    </nav>
+
+
+    <section id="Flow" active="true">
+        
+        <div class="Follow" id="FollowFlow">
+            <div class="FlowText">
+                <h1>Follow the Flow</h1>
+                <h2>My name is Jason Jiang</h2>
+                <p>
+                    I am a student at the University of University of Buffalo, studying Computer Science. 
+                    As a WNY prosperity fellow, I take seriously the duty to bring prosperity to the WNY region with Hard work and Collabration.
+                </p>
+                <p>
+                    To <b>lead</b> others with moments larger than themselves, so they can <b>grow</b> and <b>flourish</b> in their own way.
+                </p>
+
+                <p>
+                    Scroll to read the story of how I got here.
+                </p>
+            </div>
+
+            <div class="FlowText"> 
+                <h1>A path I could follow</h1>
+                <h2>Born in Brooklyn NY</h2>
+                <p>
+                    I was born in Brooklyn, NY as the first Gen of my family to be born in the US.
+                    My parents were both teachers, manderian teachers. They both were overqualified
+                    having earned their computer science degrees at City College in NY. But the computer sciense field was not as inviting to them as they had hoped.
+                </p>
+                <p>
+                    I was raised in a household that valued education and hard work. 
+                    In kindergarten, I was already in a gifted program. In 5th grade, moved to another gifted school. Took computer science APs in Middle School, studied for 3 years to get into the top high school in the city. 
+
+                    I played violin, had few friends, but wasn't bullied. The flow was easy. I knew how to study, and I was content living the same day.
+
+                    The plan was simple, I would do well in school, get into a good college, and get a good job. 
+                </p><p>
+                    Be the computer scientist - with the life my parents couldn't have navigated.
+                </p>
+            </div>
+            <div class="FlowText"> 
+                <h1>Jason sees the world</h1>
+                <h2>but what will he do</h2>
+                <p>
+                    In high school, the pressure was off. My parents were scared of the schools reputation of overwork and they wanted me to make all the choices from now on.
+                    
+                    I was taking the subway, every day on my own. My highschool was massive, and with 70% of the students being Asian, I was among people who look, spoke, and had similar lives as me as I walked around.
+
+                    Just like before, I would do all the things I saw before me. I joined the fencing team, I took all the APs I could, I hanged out with the girls I liked and the guys I wanted to be like.
+
+                    Suddenly, I really liked a lot of things. Each day was just as full as before, but I felt each day kept being really special. 
+                </p>
+            </div>
+        </div>
+        <div id="animatedWave">
+        </div>
+    </section>
+
+    <section id="WhatIWant" active="false">
+        <div class="Follow" id="FollowWant">
+            <div class="FlowText">
+                <h1>Follow the Want</h1>
+                <h2>I want to be good at my job</h2>
+                <p>
+                    The captains of my fencing teams, the computer science teachers with interesting projects, the math team students who are geniuses in my classes. My hackathon team that I won 4 hackathons with.
+                </p>
+                <p>
+                    I wanted to be like them, to stay productive. It was effortless to find the motivation to work hard, the days and nights away. I would finish all my class work in the day, do fencing through the night. Sleep and repeat.
+                </p>
+            </div>
+
+            <div class="FlowText"> 
+                <h1>Freedom to Responsibility</h1>
+                <h2>During Sophmore year, I was chosen to be captain of the fencing teams.</h2>
+                <p>
+                    Faithfully leading by example, I was able to focus on my skills in fencing, leading my team to city wide champs. 
+                </p>
+                <p>
+                    In college, with a lack of fencing, I jumped on startup teams. Guiding decisions at Ermg, taking role in development startup events and coaching students.     
+                </p>
+                <p>
+                    I was able to take the freedom I had to do what I wanted, and turn it into a responsibility to lead others.
+                </p>
+            </div>
+            <div class="FlowText"> 
+                <h1>But what's the point</h1>
+                <h2>I was having a conversation with Celine Krzan.</h2>
+                <p>
+                    When a entrapneourship professor who has taught me so many intersting ways to approach startups I thought I would learn how to do my job better. But she asked me how long could I could see myself working on my startup idea?
+                </p>
+                <p>
+                    I couldn't.
+
+                   I had been working on my startup idea for a year, and I had been doing it because the process was fun, but the result left me no more furfilled. 
+
+                    What I was doing, was missing a level of depth.
+                </p>
+            </div>
+        </div>
+        <div id="animatedHearts">
+        </div>
+    </section>
+
+    <section id="FindingHumanity" active="false">
+        <div class="Follow"id="FollowHuman">
+            <div class="FlowText">
+                <h1>Follow the Humanity</h1>
+                <h2>Non-profit work</h2>
+                <p>
+                    I spent the summer of 2023 working at the Tool Library, a non-profit in Buffalo. Everyday they were open, I would be in the front desk.
+                </p>
+                <p>
+                    I was productive and they appreciated how proud I was of my work. But they also just wanted me as a person to stay as friends. 
+                </p>
+                <p>
+                    I had friends. A community of people who I spent time with. With a shared mission to borrow tools and build community.  
+                </p>
+            </div>
+
+            <div class="FlowText"> 
+                <h1></h1>
+                <h2>During Sophmore year, I was chosen to be captain of the fencing teams.</h2>
+                <p>
+                    Faithfully leading by example, I was able to focus on my skills in fencing, leading my team to city wide champs. 
+                </p>
+                <p>
+                    In college, with a lack of fencing, I jumped on startup teams. Guiding decisions at eRMG, taking role in development startup events, coaching students, and whatever I could lead.     
+                </p>
+                <p>
+                    I was able to take the freedom I had to do what I wanted, and turn it into a responsibility to lead others.
+                </p>
+            </div>
+            <div class="FlowText"> 
+                <h1>Human resources</h1>
+                <h2>where they fail us</h2>
+                <p>
+                    Keiah Shauku, a friend of mine, told me that, that industry tries to turn people into bad robots. To push them to do a task, changing the person who was there before.
+
+                    And we can't do that. First because people who learn to be bad robots, will struggle when the task is different. Second because humans are valuable.
+                </p>
+            </div>
+        </div>
+        <div id="animatedHuman">
+        </div>
+    </section>
+    <section id="moral" active="false">
+
+        Moral of the story
+        <ol>
+           
+           <li> I was doing what I was doing because I was good at it</li>
+           <li>Then I did what I did, because I liked getting good at it and being liked by people.</li>
+           <li>I strive to do was do things because these people are my friends, and the work I do affects their lives.</li>
+        </ol>
+        <p>
+            So I can find peace. So there is a point of life, besides work. 
+            And most importantly I feel like human, and not the bad robot work that doesn't fill my bucket.
+        </p>
+
+    </section>
+</body>
+</html>
