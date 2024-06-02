@@ -115,16 +115,6 @@ function render_page(last_scroll_position, scroll_position){
         FlowButton.attr("active", "false")
         WhatIWantButton.attr("active", "true")
         FindingHumanityButton.attr("active", "false")
-        Flow.css(
-            {
-                "opacity": 1-((scroll_position-240)/20),
-            }
-        )
-        WhatIWant.css(
-            {
-                "opacity": (scroll_position-240)/20,
-            }
-        )
         WhatIWant.attr("active", true)
         Flow.attr("active", false)
         FindingHumanity.attr("active", false)

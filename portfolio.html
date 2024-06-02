@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Webpage of Jason Jiang</title>
+    <link rel="stylesheet" href="view/nav.css">
+    <link rel="stylesheet" href="view/AboutMe.css">
+    <link rel="stylesheet" href="view/portfolio.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <script src="controller/score_game/score_main.js" defer></script>
+    <script src="controller/cookie_manager.js" defer></script>
+    <script src="controller/score_game/score_portfolio.js" defer></script>
+    <script src="controller/animations/AboutMe.js" defer></script>
+    <script src="controller/animations/scroll_capture.js" defer></script>
+    <script src="controller/score_game/reset_game.js" defer></script>
+    <nav>
+        <a href="/index.html" id="home_logo">
+            <span>Welcome To </span><br> <span>Jason Jiang's</span><br> <span>Webpage</span>
+        </a>
+
+        <div id="game">
+            <span id="badge_group">
+                <a href="/index.html">
+                    <span class="badge_backing">
+                        <img id="home_badge" src="static/images/home.png" alt="Home Badge, click to visit the page to earn the badge" title="Home Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/aboutme.html">
+                    <span class="badge_backing">
+                        <img id="about_me_badge" src="static/images/aboutme.png" alt="About Badge, click to visit the page to earn the badge" title="About Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/portfolio.html">
+                    <span class="badge_backing">
+                        <img id="portfolio_badge" src="static/images/information.png" alt="Portfolio Badge, click to visit the page to earn the badge" title="Portfolio Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/network.html">
+                    <span class="badge_backing">
+                        <img id="network_badge" src="static/images/network.png" alt="Network Badge, click to visit the page to earn the badge" title="Network Badge, click to visit the page to earn the badge" data-toggle="tooltip">
+                    </span>
+                </a>
+                <a href="/star.html">
+                    <span class="badge_backing">
+                        <img id="mystery_badge" src="static/images/question.png" alt="Hidden Badge, discover the other badges to start this badge" title="Hidden Badge, discover the other badges to start this badge" data-toggle="tooltip">
+                    </span>
+                </a>
+            </span>
+            <img onclick="reset_game()" id="restart" src="static/images/restart.png" alt="Restart the game" title="Click here to reset the badges you got" data-toggle="tooltip">
+
+            
+
+        </div>
+
+        <div id="links">
+            <span id="linkHolders">
+                <a href="#FollowFlow">
+                    <button id="FlowButton" class="SectionsJumpers" active="true" type="button">
+                        Websites
+                    </button>
+                </a>
+                
+                <a href="#WhatIWant">
+                    <button  id="WhatIWantButton" class="SectionsJumpers" type="button">
+                        3d Print
+                    </button>
+                    
+                </a>
+                <a href="#FindingHumanity">
+                    <button  id="FindingHumanityButton" class="SectionsJumpers" type="button">
+                        Job Exp
+                    </button>               
+                </a>
+                <img id="laural_wreath" src="static/images/laural_wreath.png"
+                alt="Image to Represent you have completed all sections of this page" title="Reach here to recieve the badge for this page" data-toggle="tooltip
+                >
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="532" height="23" viewBox="0 0 532 23" fill="none">
+                <path d="M531.065 12.5607C531.651 11.9749 531.651 11.0251 531.065 10.4393L521.519 0.893398C520.934 0.307612 519.984 0.307612 519.398 0.893398C518.812 1.47918 518.812 2.42893 519.398 3.01472L527.883 11.5L519.398 19.9853C518.812 20.5711 518.812 21.5208 519.398 22.1066C519.984 22.6924 520.934 22.6924 521.519 22.1066L531.065 12.5607ZM-0.00390625 13H530.005V10H-0.00390625V13Z" fill="black"/>
+              </svg>
+        </div>
+    </nav>
+
+
+    <section id="Flow" active="true">
+        
+        <div class="Follow" id="FollowFlow">
+            <div class="FlowText">
+                <h1>Portfolio | Websites | School Team Projects</h1>
+                Scroll down for more
+                <div class="row ">
+                    <div class="col">
+                        <h2>Computer Science Capstone 4-team </h2>
+                        <div class="row">
+
+                            <a href="https://www-student.cse.buffalo.edu/CSE442-542/2024-Spring/cse-442ah/" target="_blank">Link</a>
+                            Project started from scratch
+                        </div>
+                        <div class="row">
+                            <img src="static/images/portfolio/nightbrew_web.jpeg" alt="Dashboard To see popular Events">
+                            <img src="static/images/portfolio/create_local_event.jpeg" alt="adding an local events">
+                        </div>
+                        <ul>
+                            <li>Designed a events website that focus on the newest events closest to you. Newest events in your area are put at the top of your events tab. Make more friends with those close to you</li>
+                            <li>Was in charge of creating events feature, popular events section</li>
+                            <li>Class included a Project manager, 4 agile sprints, , bi-weekly standup calls</li>
+                            <li> Used Technology, React, PHP, mySQL, websockets, requests, figma, trello, postman, github</li>
+                            <li> Refrence available upon request</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Human Computing Interface 5-team</h2>
+                        <div class="row">
+                            <a href="https://webdev.cse.buffalo.edu/hci/teams/twopiece/login" target="_blank">Link</a>
+                        <a href="https://github.com/CSE370HCI/hci-social-frontend"> Starting Code</a>
+                        </div>
+                        
+                        <div class="row">
+                            <img src="static/images/portfolio/chat.jpeg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                            <img src="static/images/portfolio/scrapbook.jpeg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                        </div>
+                        <ul>
+                            <li>Turned Social Media template into Scrapbook with friends app, pulling memories out of chat, onto a scrapbook, which is printable</li>
+                            <li>Was in charge of Scrapbook feature, Sharing with users, Style Guide</li>
+                            <li>Throughout this project, I pitched the idea on stage within the class, and in other entrapneourship competitions. </li>
+                            <li>Class included a Project manager, 1 AB testing, 4 user acceptance tests, 4 agile sprints, bi-weekly standup calls</li>
+                            <li> Used Technology, React, websockets, requests, figma, trello, postman, github </li>
+                            <li> Refrence available upon request</li>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+
+                
+                
+                
+            </div>
+
+            <div class="FlowText"> 
+                <h1>Portfolio | Websites | Python webapps</h1>
+                <div class="row ">
+                    <div class="col">
+                        <h2>Kuai | Google Mentorship Project | 2021</h2>
+                        <div class="row">
+
+                            <a href="https://github.com/dlyalin20/Kuai" target="_blank">Codebase</a>
+                            Project started from scratch
+                        </div>
+                        <ul>
+                            <li>Designed a website that tells you what restaurants can make food the fastests                             
+                            </li>
+                            <li>Was in charge entire web project</li>
+                            <li>Project lasted 6 months, included a google engineer mentor Irene Woo, weekly calls</li>
+                            <li> Used Technology, Django, Docker, Google Cloud, Redis, websockets, requests, postman, github</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Aquafonte | StuyHackX | 2020</h2>
+                        <div class="row">
+                            <a href="https://github.com/JasonJiangTinkering/StuyHackX" target="_blank">Codebase</a>
+                        </div>
+                        
+                        <ul>
+                            <li>Developed web app to show where nearest public restrooms and water foundain were, in 48 hours.</li>
+                            <li>Was in charge of backend and frontend development of website. Since mobile app broke, this was the demoed product.</li>
+                            <li> Used Technology: Django, async, google cloud, websockets, requests, postman, github </li>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="FlowText"> 
+                <h1>This site's techincal specs:</h1>
+                <h2>Technologies: HTML, CSS, JS, Jquery, Figma, Github Pages</h2>
+                <div>
+                    <p>
+                        First venture into a scroll jacking website, natively
+                    </p>
+                    <p>Cookies are used to record badge completion status</p>
+                </div>
+            </div>
+        </div>
+        <div id="animatedWave">
+        </div>
+    </section>
+
+    <section id="WhatIWant" active="false">
+        <div class="Follow" id="FollowWant">
+            <div class="FlowText">
+                <h1>3d Printing | Tool Library</h1>
+                <div class="row ">
+                    <div class="col">
+                        <h2>Grant Writing</h2>
+                        <div class="row">
+
+                            <a href="https://mailchi.mp/thetoollibrary/give-the-gift-of-sharing-with-the-tool-library-9445663?e=7985bbcb09" target="_blank">Wrote a grant that gave the Tool library the 3d printer, and infrastructure to start their initative.</a>
+                            
+                        </div>
+                        <div class="row">
+                            <img src="static/images/portfolio/firstWorkshop.jpg" alt="First workshop introducting the 3d printer and giving the community a chance to weigh in on direction">
+                            <img src="static/images/portfolio/Tool library logic model canvas.png" alt="First print of the 3d printer, a keychain">
+                            <ul>
+                                <li>Designed a logic model canvas to clearly articulate all the resources we have access to , to the activities, to the outcomes, and all the stages between </li>
+                                <li>Made design choices for a printer that is likely mean to be used for home repair</li>
+                                <li> Refrence available upon request</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2> Completed Prints</h2>
+                        <div class="row">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4RjmafHoySodKGjdWsmAco7qO4aKSc58o--eyzNZF-x1yrw/viewform" target="_blank">Form for members to start 3d printing projects</a>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <img src="static/images/portfolio/platter.jpg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                                <img src="static/images/portfolio/lightsaber.jpg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                            </div>
+                            <img src="static/images/portfolio/3d printied Door Latch.jpeg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                            <img src="static/images/portfolio/AutodeskFusionEducationLicense2024-05-1022-24-26-ezgif.com-speed.gif" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                            
+
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="FlowText"> 
+                <h1>Tool libary 3d printing, In Person</h1>
+                <div class="row">
+                    <div class="col">
+                        <h2>Workshop</h2>
+                            <p>
+                                Meant to be a series of workshops, there were a few barriers that stopped up from proceeding
+                            </p>
+                            <p>First the grant writing didn't include funding for workshops, when the 3d printer is already incurring costs to the Tool Library</p>
+                            <p>
+                                Secondly, the Tool Library workshops were meant to teach each people compantancy in the 3d printer. But without the space or curriculum, there were barriers to start it. 
+                            </p>
+
+                            <p>With the follow up grant, I am reaching out to the Foundary, which is a makerspace with the facilities and the knowhow to teach our commmunity to 3d print</p>
+
+
+                    </div>
+                    <div class="col">
+                        <h2>Printer Build</h2>
+                        <img src="static/images/portfolio/3dPrinting.jpg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                        <p>
+                            Over a couple of weekends, me, one of my residents, and in-store workstudy students took a the 3d printer system and built it.
+                        </p>
+
+                        <p> It includes 2 large dryer boxes, so up to 4 different materials can be dry and ready to print with</p>
+
+                        <p>Includes an encloser that is also air filtered, to ensure safety of the people working in the enclosed basement</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="FlowText"> 
+                <h1>Presonal 3d printing Projects | Gocart | Positron</h1>
+                <div class="row">
+                    <div class="col">
+
+                        
+                        <h2>Upcycled GoCart</h2>
+                        <div class="row">
+
+
+                            <img src="static/images/portfolio/go_cart.jpg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                            <img src="static/images/portfolio/gear_box.jpg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                        </div>
+
+                        <p>
+                            I'm taking spare parts from projects I've worked on, and turning them into a go cart, that sits flush in my car trunk. 
+                        </p>
+                    </div>
+                    <div class="col">
+
+                        <h2>Positron</h2>
+                        <img src="static/images/portfolio/positron.jpg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                        <img src="static/images/portfolio/positron2.jpg" alt="TwoPiece Chat" title="TwoPiece Chat" data-toggle="tooltip">
+                        <p>
+                            I'm building a folding 3d printer, to bring to the Tool Library's Dare to repair event, which is a community event to fix broken items, that sets up in a different location every time.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="animatedHearts">
+        </div>
+    </section>
+
+    <section id="FindingHumanity" active="false">
+        <div class="Follow"id="FollowHuman">
+            <div class="FlowText">
+                <h1>eRMG | September 2022 - June 2023</h1>
+                <h2>Software Developer, directly under a Senior Software Developer</h2>
+                <p>
+                    Proud of being able to jump into a 4 year old project. I was able to work async, delievering reults, and sitting on Client Calls. Able to bring the Webapp, to a state that was ready for the client to try.
+                </p>
+                <p>
+                    Learned, to emphasis the details for anything that is public to clients. From demo data, messages, or how I present myself.
+                </p>
+                <p>
+                    Working under a senior developer, I was able to learn techniques to be a effective team member, advocates for changes to the code, and how much of a difference best practices make.
+                </p>
+            </div>
+
+            <div class="FlowText"> 
+                <h1>Odoo | June 2023</h1>
+                <h2>Software Developer Intern</h2>
+                <p>
+                    First got to be trained on how Odoo works, and how to do developement work to extend its capabilities. 
+                </p>
+                <p>
+                    Worked on a team of 3 people, with a project manager from SF. We extended the Odoo tours feature, to turn it into a training tool for new employees, as well as built in automation tool.
+                </p>
+                <p>
+                    Our team couldn't have been more different. I always sought to find feedback, by asking around the office to test and give feedback on the tool. Devin was the one who was always looking for the next thing to do to get his vision of the project done. Nick was the calm analyser, who helped us find the right ways to do thing, through documentation. 
+                </p>
+            </div>
+            <div class="FlowText"> 
+                <div class="row">
+                    <div class="col">
+                        <h1>Tool Libary</h1>
+                        <h2>WNY Prosperity Fellowhip Internship</h2>
+                        <p>Funded by WNY Prosperity to work 200 hours at the Tool Library</p>
+                        <p>Learned what is like making change, within a community organization that has been doing communtiy work for over 10 years</p>
+                        <p>Worked on inventory, Built in tools, and Dare to repair</p>
+                    </div>
+                    <div class="col">
+                        <h1>Entrapneourship</h1>
+                        <h2>Getting on the books</h2>
+                        <p>The WNY prosperity fellowship encourages its fellows to be entrapenours</p>
+                        <p>After trying 4 startup ideas within UB</p>
+                        <p>Placing at 2 startup pitching competitions</p>
+                        <p>This summer, I am trying to incoporate, and find a way to be legit and make partnership that will turn into a business</p>
+                    </div>
+                </div> 
+
+                </p>
+            </div>
+        </div>
+        <div id="animatedHuman">
+        </div>
+    </section>
+</body>
+</html>

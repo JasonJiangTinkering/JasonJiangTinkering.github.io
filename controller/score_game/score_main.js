@@ -21,4 +21,8 @@ $(document).ready(function() {
      if (getCookie('home_badge') == '1' && getCookie('about_me_badge') == '1' && getCookie('portfolio_badge') == '1' && getCookie('network_badge') == '1' && getCookie('mystery_badge') == '1'){
          window.alert("You won the game!")
      }
+
+     if (getCookie('home_badge') == '1' && getCookie('about_me_badge') == '1' && getCookie('portfolio_badge') == '1'){
+        window.alert("You won the game | Since the rest of the page is still under construction!")
+    }
  });

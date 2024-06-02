@@ -82,6 +82,8 @@ html{
     }
     100%{
         opacity: 1;
+        background-position-x: 0px;
+        left: 0;
     }
 }
 
@@ -89,11 +91,12 @@ section{
     animation-name: fade_In_out;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    animation-direction: alternate;
     animation-timing-function: ease-in-out;
     transition: display 1s, visibility 1s;
+    background-position-x: 0px;
 }
 section[active=true]{
+    background-position-x: 0px;
     position: absolute;
     display: flex;
     visibility: visible;
