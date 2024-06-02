@@ -5,6 +5,7 @@ html{
 }
 
 #HowTo{
+    z-index: 1;
     position: fixed;
     width: 1440px;
     height: 641px;
@@ -45,11 +46,14 @@ html{
     text-align: right;
 
 }
+#start_image_parent > *{
+    z-index: 2;
+
+}
 #start_image_parent{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -125,4 +129,105 @@ html{
     font-weight: 400;
     line-height: normal;
     z-index: 3;
+}
+
+
+#sections{
+    --hiddenPercent: 1;
+    background-color: #BB425F;
+    z-index: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Jost;
+    font-size: 45.885px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+h1, h2{
+    font-weight: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: inherit;
+}
+
+#sections>span{
+    opacity:  calc(1 - var(--hiddenPercent));
+    display: block;
+    width: 1068px;
+    height: 678px;
+    overflow: hidden;
+    position: relative;
+}
+#sections>span>span{
+    display: block;
+}
+#sections>span>a>div>h1,#sections>span>span>a>div>h1{
+    margin: 0;
+}
+
+
+#AboutMe_section{
+    left: calc(var(--hiddenPercent) * -599px);
+    position: absolute;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 599px;
+    background: linear-gradient(0deg, #BCB2B2 0%, #BCB2B2 100%), linear-gradient(0deg, #BCB2B2 0%, #BCB2B2 100%), linear-gradient(0deg, #BCB2B2 0%, #BCB2B2 100%), #BCB2B2;
+}
+
+#Special_section{
+    top: calc(var(--hiddenPercent) * -403px);
+
+    position: absolute;
+    left:260px;
+    width: 533px;
+    height: 403px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #B7D5C9;
+    text-align: center;
+
+}
+
+#Portfolio_section{
+    bottom: calc(var(--hiddenPercent) * -403px);
+    position: absolute;
+    left:260px;
+    width: 533px;
+    height: 403px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    background: #4AAE84;
+    text-align: center;
+}
+
+#Network_section{
+    right: calc(var(--hiddenPercent) * -599px);
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 599px;
+    background: #7968BC;
 }

@@ -30,10 +30,11 @@ var DoSomething = $("#DoSomething")
 var SectionsButtton = $("#Sections_Button")
 var HowToButton = $("#How_To_Button")
 var MissionButton = $("#Mission_Button")
-
+var sections = $("#sections")
 // based on scroll position, edit page with animations
 function render_page(last_scroll_position, scroll_position){
-    scroll_position = scroll_position/10;
+
+    check_win_con();
     console.log(scroll_position)
     if (scroll_position <= 0){
         scroll_position = 0;
@@ -110,6 +111,31 @@ function render_page(last_scroll_position, scroll_position){
             "opacity", 0
         )
     }
-
+    if (scroll_position > 400 && scroll_position < 600){
+        sections.css({
+            "opacity": (scroll_position-400)/200,
+            "z-index": 10,
+    })
+    } else if (scroll_position >= 600) {
+        sections.css({
+            "opacity": 1,
+            "z-index": 10,
+        })
+    }else{
+        sections.css({
+            "opacity": 0,
+            "z-index": 0,
+        }) 
+    }
+    if (scroll_position > 600 && scroll_position < 1000){
+        getComputedStyle(sections.get()[0]).getPropertyValue("--hiddenPercent");
+        sections.get()[0].style.setProperty("--hiddenPercent", 
+        (1000-scroll_position)/1000);
+    }else if (scroll_position >= 1000){
+        sections.get()[0].style.setProperty("--hiddenPercent", 0);
+    }
+    else{
+        sections.get()[0].style.setProperty("--hiddenPercent", 1);
+    }
 
 }

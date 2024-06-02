@@ -1,4 +1,7 @@
 function reset_game() {
-  document.cookie = "[0,0,0,0,0]; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-  location.reload();
+    setCookie('home_badge', '0', 7);
+    setCookie('about_me_badge', '0', 7);
+    setCookie('portfolio_badge', '0', 7);
+    setCookie('network_badge', '0', 7);
+    setCookie('mystery_badge', '0', 7);
 }
